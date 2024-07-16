@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindScape Conqueror</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>MindScape Conqueror</h1>
+        <nav aria-label="Game Navigation">
+            <button id="homeButton" aria-hidden="true">Home</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intention">
+            <h2>Your Learning Quest:</h2>
+            <label for="objective">What do you seek to master?</label>
+            <input type="text" id="objective" placeholder="e.g., Conquer the Python Universe">
+            
+            <label for="level">Choose your challenge:</label>
+            <select id="level">
+                <option value="easy">Apprentice</option>
+                <option value="medium">Journeyman</option>
+                <option value="hard">Master</option>
+            </select>
+
+            <button id="startButton">Embark on Your Adventure!</button>
+        </section>
+
+        <section id="game" aria-hidden="true">
+            <div id="keywords">
+                <label for="keywordsInput">Your Enchanted Tools (Keywords):</label>
+                <textarea id="keywordsInput" placeholder="Separate by commas"></textarea>
+                <button id="showHintButton">Need a Hint?</button>
+            </div>
+            <div id="gameArea"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MindScape Conqueror - <a href="mailto:support@mindscapeconqueror.com">Contact Us</a></p> 
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
